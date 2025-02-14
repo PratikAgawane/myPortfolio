@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #235b94;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.social-icons a {
+    color: white;  /* Adjust to fit your theme */
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #0d6efd; /* Bootstrap primary color */
+}
+#projects {
+    flex: content;
+    flex-wrap: wrap;
+    
+}
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.caraousel{
+    transition: transform 3s ease-in-out;
+}
+.skill-box {
+    display: flex;
+    align-items: center;
+    background: #4997e6;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+.profile-section {
+    text-align: center;
+    margin-top: 50px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+}
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    animation: rotateLogo 3s linear infinite;
+}
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.button.download-button {padding: 14px 40px;
+border-radius: 8px;
+border: black;
+align-content: center;}
