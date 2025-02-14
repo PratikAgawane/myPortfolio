@@ -94,3 +94,28 @@ p, .btn {
 border-radius: 8px;
 border: black;
 align-content: center;}
+
+.download-button {
+    display: block;
+    margin: 20px auto; /* Centers the button */
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.download-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
