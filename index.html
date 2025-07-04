@@ -13,6 +13,31 @@
 
 
     <style>
+        .project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.view-demo-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00c896; /* Aquamarine shade */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-demo-btn:hover {
+  background-color: #009e75;
+}
+
       .profile-img {
     max-width: 100%;
     height: auto;
@@ -119,7 +144,7 @@
     <header class="container profile-section" id="home">
         <div class="row text-center"><div class="col-md-6"><img src="my_pic.jpeg" alt="Profile Photo" class="profile-img">  </div>
 <div class="col-md-6 center"><h1>Hi, I'm Pratik Shashikant Agawane</h1>
-    <p>MCA Student | Web Developer | Software Developer</p>
+    <p>MCA Graduate | Web Developer | Software Developer | UI/UX Designer</p>
 
       <a href="#projects" class="btn btn-light mt-3">View Projects</a>
   </div>
@@ -134,14 +159,7 @@
         <p class="text-center">"Turning ideas into reality with code!"</p>
             <p class="text-center">
             An MCA Graduate passionate about web development, software engineering, and UI/UX design. With a strong foundation in HTML, CSS, JavaScript, ReactJS, Python, Java, SQL, and MongoDB, I thrive on crafting dynamic and engaging user experiences.</p>
-        <!-- <div class="row text-center">
-            <div class="col-md-6">
-                <h4>Education</h4>
-                <ul>
-                    <li>MCA - Zeal Institute, Pune (2023-2025)</li>
-                    <li>BSc CS - Bhavan's College, Andheri(W) Mumbai  (2022)</li>
-                </ul>
-            </div> -->
+       
     </section>
  <div class="text-center my-4">
     <a href="Pratik_Agawane_CV.pdf" download class="btn btn-primary mx-2"><b>Download CV</b></a>
@@ -199,19 +217,45 @@
   </div>
 </section>
 
+<section id="projects" style="padding: 20px;"class="container py-5">
+  <h2 class="text-center" >Projects</h2>
+<div class="row text-center container">
+
+  <div class="project-card mx-3" style="width: 18rem;">
+  <img src="CookShook.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title my-3">CookShook - Recipe Web App</h5>
+    <p class="card-text">A personalized recipe recommendation web app with login, meal planning, and more.</p>
+    <a href="#" class="btn btn-primary">View Demo</a>
+  </div>
+</div>
+
+<div class="project-card" style="width: 18rem;">
+  <img src="akshar.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title my-3">Akshar -Text Utility App</h5>
+    <p class="card-text">Akshar is your all-in-one text utility app designed to help you transform, analyze, and polish your written content with ease</p>
+    <a href="https://akshartextutil.netlify.app/" class="btn btn-primary">View Demo</a>
+  </div>
+</div>
+  </div>
+
+ 
+</section>
+
     
     <!-- Projects Section -->
-    <section id="projects" class="container py-5">
+    <!-- <section id="projects" class="container py-5">
         <h2 class="text-center">Projects</h2>
         <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="akshar.jpg" class="d-block w-50" alt="Akshar App">
+                    <img src="akshar.jpg" class="d-block w-50" alt="Akshar App"> -->
                     <!-- <div class="carousel-caption d-none d-md-block">
                         <h5>Akshar (Text Utility App)</h5>
                         <p>A powerful text utility app with multiple features.</p>
                     </div> -->
-                </div>
+                <!-- </div>
                 <div class="carousel-item">
                     <img src="idcard.jpg" class="d-block w-50" alt="ID Card Generator">
                     
@@ -232,7 +276,7 @@
             </button>
         </div>  
             
-    </section>
+    </section> -->
     
     <!-- Contact Section -->
     <section id="contact" class="container py-5">
