@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Shashikant Agawane | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+    <style>
+        .project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.view-demo-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00c896; /* Aquamarine shade */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-demo-btn:hover {
+  background-color: #009e75;
+}
+
+      .profile-img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: none;
+    transform: none;
+}
+
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .dark-mode .navbar {
+            background-color: #333;
+        }
+        .dark-mode .card {
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .dark-mode .btn {
+            background-color: #575252;
+            color: white;
+        }
+        .carousel-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .carousel {
+            transition: transform 3s ease-in-out;
+        }
+        .skill-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #4997e6;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+            min-width: 150px;
+            cursor: pointer;
+        }
+        .skill-box:hover {
+            transform: scale(1.05);
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tool-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #4997e6;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+            min-width: 150px;
+            cursor: pointer;
+        }
+        .tool-box:hover {
+            transform: scale(1.05);
+        }
+        .tools-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* .tools-box i:hover {
+  color: #007bff;
+  transform: scale(1.2);
+} */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="A.jpg" alt="logo" width="50" height="50" class="navbar-brand me-2">
+            <a class="navbar-brand" href="#"> SP TechVerse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><button class="btn btn-light" id="dark-mode-toggle">🌙</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="container profile-section" id="home">
+        <div class="row text-center"><div class="col-md-6"><img src="my_pic.jpeg" alt="Profile Photo" class="profile-img">  </div>
+<div class="col-md-6 center"><h1>Hi, I'm Pratik Shashikant Agawane</h1>
+    <p>MCA Graduate | Web Developer | Software Developer | UI/UX Designer</p>
+
+      <a href="#projects" class="btn btn-light mt-3">View Projects</a>
+  </div>
+</div>
+
+
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">"Turning ideas into reality with code!"</p>
+            <p class="text-center">
+            An MCA Graduate passionate about web development, software engineering, and UI/UX design. With a strong foundation in HTML, CSS, JavaScript, ReactJS, Python, Java, SQL, and MongoDB, I thrive on crafting dynamic and engaging user experiences.</p>
+       
+    </section>
+ <div class="text-center my-4">
+    <a href="Pratik_Agawane_CV.pdf" download class="btn btn-primary mx-2"><b>Download CV</b></a>
+    <a href="https://github.com/PratikAgawane" target="_blank" class="btn btn-dark mx-2"><b>Visit GitHub</b></a>
+</div>
+
+
+   <!-- Skills Section -->
+   <section id="skills" class="container py-5">
+    <h2 class="text-center">Skills</h2>
+    <div class="row text-center skills-container">
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-html5 fa-2x me-2"></i> HTML</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-css3 fa-2x me-2"></i> CSS</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-js fa-2x me-2"></i> JavaScript</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-python fa-2x me-2"></i> Python</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-java fa-2x me-2"></i> Java</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fab fa-php fa-2x me-2"></i> PHP</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fas fa-database fa-2x me-2"></i> SQL</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fas fa-server fa-2x me-2"></i> MySQL</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fas fa-leaf fa-2x me-2"></i> MongoDB</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fas fa-chart-line fa-2x me-2"></i> PowerBI</div>
+        </div>
+        <div class="col-md-3">
+            <div class="skill-box"><i class="fas fa-chart-bar fa-2x me-2"></i> Tableau</div>
+        </div>
+    </div>
+</section>
+  <section id="tools" style="padding: 20px;" class="container py-5">
+  <h2 class="text-center">Tools  Skills</h2>
+  <div class="row text-center tools-container">
+    <div class="col-md-3"><div class="tool-box"><i class="fab fa-figma" title="Figma"></i>Figma</div></div>
+    <div class="col-md-3"><div class="tool-box"><i class="fas fa-paint-brush" title="Canva"></i>Canva</div></div>
+    <div class="col-md-3"><div class="tool-box"><i class="fab fa-git-alt" title="Git"></i>Git</div></div>
+    <div class="col-md-3"><div class="tool-box"><i class="fab fa-github" title="GitHub"></i>Github</div></div>
+   <div class="col-md-3"><div class="tool-box"> <i class="fas fa-code" title="VS Code"></i>VS Code</div></div>
+  </div>
+</section>
+
+<section id="projects" style="padding: 20px;"class="container py-5">
+  <h2 class="text-center" >Projects</h2>
+   <p class="text-center">
+        These are some basic projects i made and there are many more which can be seen on my Github page    </p>
+       
+<div class="row text-center container">
+
+  <div class="project-card mx-3" style="width: 18rem;">
+  <img src="CookShook.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title my-3">CookShook - Recipe Web App</h5>
+    <p class="card-text">A personalized recipe recommendation web app with login, meal planning, and more.</p>
+    <!-- <a href="#" class="btn btn-primary">View Demo</a> -->
+    <a href="https://github.com/PratikAgawane/CookShook" class="btn btn-primary">View Project</a>
+
+  </div>
+</div>
+
+<div class="project-card mx-3" style="width: 18rem;">
+  <img src="akshar.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title my-3">Akshar -Text Utility App</h5>
+    <p class="card-text">Akshar is your all-in-one text utility app designed to help you transform, analyze, and polish your written content with ease</p>
+    <a href="https://akshartextutil.netlify.app/" class="btn btn-primary">View Demo</a>
+  </div>
+</div>
+
+<div class="project-card mx-3" style="width: 18rem;">
+  <img src="icon.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title my-3">Calculator</h5>
+    <p class="card-text">A Simple calculator with basic arithmetic calculations</p>
+    <a href="https://flashcalc.netlify.app/" class="btn btn-primary">View Demo</a>
+  </div>
+</div>
+  </div>
+
+ 
+</section>
+
+    
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="container py-5">
+        <h2 class="text-center">Projects</h2>
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="akshar.jpg" class="d-block w-50" alt="Akshar App"> -->
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>Akshar (Text Utility App)</h5>
+                        <p>A powerful text utility app with multiple features.</p>
+                    </div> -->
+                <!-- </div>
+                <div class="carousel-item">
+                    <img src="idcard.jpg" class="d-block w-50" alt="ID Card Generator">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="CookShook.jpg" class="d-block w-50" alt="CookShook">
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>  
+            
+    </section> -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="col-md-6 offset-md-3">
+
+            <input type="hidden" name="access_key" value="29c8991a-1f77-4d77-8f9c-5a8b002ae6a5">
+
+          <div class="contact-box"><input type="text" id="name" name="name" class="form-control my-2" placeholder="Your Name" required></div>  
+            <div class="contact-box"><input type="email" id="email" name="email" class="form-control my-2" placeholder="Your Email" required></div>
+            <div class="contact-box"><textarea id="Message" name="Message" class="form-control my-2" rows="4" placeholder="Your Message" required></textarea></div>
+            <div class="contact-box"><button type="submit" class="btn btn-primary">Send</button></div>
+        </form>
+        <div class="social-icons text-center mt-3">
+            <a href="https://github.com/PratikAgawane" target="_blank" class="me-3 "><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/pratik-agawane/" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/sonupratik01/" target="_blank" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/@sonupratik4254" target="_blank" class="me-3"><i class="fab fa-youtube fa-2x"></i></a>
+            
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy;  Pratik Agawane | All Rights Reserved</p>
+        
+    </footer>
+    <script>
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+            let mode = document.body.classList.contains("dark-mode") ? "🌞" : "🌙";
+            document.getElementById("dark-mode-toggle").innerText = mode;
+        });
+        
+        gsap.from(".card", { opacity: 0, y: 50, duration: 1, delay: 0.5, stagger: 0.2 });
+    </script>
+        
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.from(".skill-box", {
+                opacity: 0,
+                y: 50,
+                duration: 1.5,
+                stagger: 0.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#skills",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+                        gsap.from(".profile-section img", { duration: 1, y: -50, opacity: 0 });
+            gsap.from(".profile-section h1", { duration: 1.5, x: 100, opacity: 0 });
+            gsap.from(".skill-box", {
+                scrollTrigger: ".skill-box",
+                y: 30,
+                opacity: 0,
+                stagger: 0.2
+            });
+        gsap.from(".contact-box", {
+            opacity: 0,
+            x: function() { return Math.random() * 200 - 100; }, // Randomized x movement
+            y: function() { return Math.random() * 200 - 100; }, // Randomized y movement
+            duration: 1.5,
+            delay: 0.5,
+            stagger: 0.2,
+            ease: "bounce.out",
+            scrollTrigger: {
+                trigger: "#contact",
+                start: "top 80%",
+                toggleActions: "play none none none"
+            }
+        });
+    </script>
+<script>
+  
+    gsap.from(".center", {
+        opacity: 0,
+        x: 100,
+        duration: 1,
+        delay: 0.4
+    });
+
+    // Section Fade-ins
+    gsap.utils.toArray("section").forEach(section => {
+        gsap.from(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top 80%",
+                toggleActions: "play none none none"
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1
+        });
+    });
+</script>
+<!-- <script>
+  gsap.from(".profile-img", {
+    scrollTrigger: {
+      trigger: ".profile-img",
+      start: "top 80%"
+    },
+    duration: 1,
+      y: -30,
+    opacity: 0,
+    scale: 0.8,
+    ease: "power2.out"
+  });
+</script> -->
+
+
+</body>
+</html>
